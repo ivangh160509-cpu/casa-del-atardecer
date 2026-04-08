@@ -1,0 +1,1013 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Casa del Atardecer</title>
+    <meta name="description" content="Casa del Atardecer es un jardín para eventos y camping en Oaxtepec Morelos. A 5 minutos de Tlayacapan y 10 de Six Flags Hurricane Harbor. Ideal para fiestas, reuniones y escapadas.">
+
+<meta name="keywords" content="jardín de eventos Oaxtepec, jardín para fiestas Morelos, camping Oaxtepec, jardín para eventos Tlayacapan, eventos en Morelos">
+
+<meta name="author" content="Casa del Atardecer">
+
+<meta property="og:title" content="Casa del Atardecer - Jardín de eventos y camping en Oaxtepec">
+
+<meta property="og:description" content="Hermoso jardín para eventos y camping cerca de Tlayacapan y Six Flags Hurricane Harbor.">
+
+<meta property="og:type" content="website">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        #main .major p {
+    text-align: justify;
+    hyphens: auto; /* Esto ayuda a que las palabras largas se corten con guion y no queden huecos blancos grandes */
+}
+        
+        /* --- ESTILOS PERSONALIZADOS GENERALES --- */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #intro {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url("images/bg.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4em 2em;
+        }
+
+        #intro h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #ffffff;
+            margin-bottom: 0.25em;
+        }
+
+        #intro p.tagline {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 1.5em;
+        }
+
+        #intro p {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: rgba(255,255,255,0.9);
+            max-width: 800px;
+            margin-bottom: 2em;
+        }
+
+        #intro .actions li a.button.herobutton {
+            background-color: transparent !important;
+            border: 2px solid #ffffff !important;
+            color: #ffffff !important;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            box-shadow: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #intro .actions li a.button.herobutton:hover {
+            background-color: #ffffff !important;
+            color: #1e252d !important; 
+        }
+
+        h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* --- TEMA OSCURO PARA TODO EL CONTENEDOR PRINCIPAL (#main) --- */
+        #main {
+            background-color: #121212 !important; 
+            color: #cccccc !important; 
+        }
+
+        #main h2, #main h3, #main h4, #main h5, #main h6 {
+            color: #ffffff !important; 
+        }
+
+        #main header.major p {
+            color: #aaaaaa !important; 
+        }
+
+        #main > .post {
+            border-bottom: solid 2px #222222 !important; 
+        }
+
+        /* --- TEMA OSCURO PARA EL FOOTER Y COPYRIGHT --- */
+        #footer {
+            background-color: #121212 !important;
+            border-top: solid 2px #222222 !important;
+            color: #cccccc !important;
+        }
+
+        #footer h3 {
+            color: #ffffff !important;
+        }
+
+        #footer section {
+            border-color: #222222 !important;
+        }
+
+        #footer .contact {
+            border-color: #222222 !important;
+        }
+
+        #footer .contact > section {
+            border-color: #222222 !important;
+        }
+
+        #footer a {
+            color: #cccccc !important;
+            transition: color 0.2s ease-in-out;
+        }
+
+        #footer a:hover {
+            color: #ff6b00 !important; 
+        }
+
+        #copyright {
+    background-color: transparent !important;
+    border-top: none !important;
+    color: #000000 !important;
+}
+
+        .featured-img-container {
+            max-width: 650px; 
+            height: 550px; 
+            margin: 2em auto; 
+            overflow: hidden; 
+            border-radius: 8px; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+
+        .featured-img-container img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            border: none; 
+        }
+
+        /* Tarjetas de servicios */
+        .service-card {
+            text-align: center;
+            padding: 2em 1em;
+            background: #1a1a1a !important; 
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            height: 100%;
+        }
+        .service-card h3 {
+            margin-bottom: 1em;
+            color: #ffffff !important;
+        }
+
+        /* --- ESTILOS DE LA NUEVA GALERÍA POR CATEGORÍAS --- */
+        .category-wrapper {
+            margin-bottom: 1.5em;
+        }
+        
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        
+        .img-container img {
+            display: block;
+            width: 100%;
+            margin: 0 !important; /* Para que la imagen quede perfecta en la caja */
+        }
+        
+        .btn-ver-mas {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.75) !important;
+            border: 1px solid #555 !important;
+            color: #ffffff !important;
+            padding: 0.3em 0.8em !important;
+            font-size: 0.75rem !important;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            cursor: pointer;
+            z-index: 10;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+            height: auto !important;
+            line-height: 1.5 !important;
+        }
+        
+        .btn-ver-mas:hover {
+            background-color: #ff6b00 !important;
+            border-color: #ff6b00 !important;
+        }
+        
+        .subgallery {
+            display: none;
+            margin-top: 10px;
+            background: #181818;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #2a2a2a;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        .subgallery .row {
+            margin: -5px; /* Ajusta el espacio entre las 4 fotos chiquitas */
+        }
+        
+        .subgallery .col-6 {
+            padding: 5px; 
+        }
+        
+        .subgallery img {
+            border-radius: 4px;
+            margin: 0;
+            display: block;
+            width: 100%;
+        }
+
+        /* --- ESTILOS DEL CARRUSEL --- */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 3em auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-track img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(26, 26, 26, 0.8); 
+            color: #ffffff;
+            border: 1px solid #333;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-btn:hover {
+            background-color: rgba(5, 2, 0, 0.9); 
+            border-color: #000000;
+        }
+
+        .carousel-prev { left: 15px; }
+        .carousel-next { right: 15px; }
+
+        /* --- ESTILOS DE LA SECCIÓN DE RESERVAS --- */
+        .reservation-widget {
+            position: relative;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('images/pic12.jpg'); 
+            background-size: cover;
+            background-position: center;
+            padding: 4em 3em;
+            margin: 4em 0;
+            border-radius: 8px;
+            display: flex; 
+            flex-direction: row; 
+            flex-wrap: nowrap; 
+            align-items: center;
+            justify-content: space-between;
+            gap: 3em;
+            color: #ffffff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+            border: 1px solid #333;
+        }
+
+        .reservation-info {
+            flex: 1; 
+            min-width: 300px;
+        }
+
+        .reservation-info .stars {
+            color: #f5a623;
+            font-size: 1.5rem;
+            margin-bottom: 0.5em;
+            letter-spacing: 2px;
+        }
+
+        .reservation-info p.desc {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2em;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .reservation-contact {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+
+        .reservation-contact i {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-right: 0.5em;
+        }
+
+        .reservation-contact .details span {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .reservation-contact .details strong {
+            font-size: 1.5rem;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .reservation-box {
+            flex: 0 0 400px; 
+            background-color: #0a0a0a; 
+            padding: 3em 2em;
+            border-radius: 4px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+            border: 1px solid #222;
+        }
+
+        /* --- REGLA PARA CELULARES --- */
+        @media screen and (max-width: 850px) {
+            .reservation-widget {
+                flex-direction: column;
+                padding: 3em 2em;
+            }
+            .reservation-box {
+                flex: 1 1 100%;
+                width: 100%;
+            }
+        }
+
+        .reservation-box h3 {
+            color: #ffffff;
+            margin-bottom: 1.5em;
+            text-align: left;
+            border-bottom: none;
+            padding-bottom: 0;
+            font-size: 1.8rem;
+        }
+
+        .reservation-box input[type="date"],
+        .reservation-box select {
+            background-color: #1a1a1a !important;
+            color: #ffffff !important;
+            border: 1px solid #333333 !important;
+            border-radius: 4px !important;
+            width: 100%;
+            margin-bottom: 1.5em;
+            padding: 0.8em;
+        }
+
+        .reservation-box input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            cursor: pointer;
+        }
+
+        .res-row {
+            display: flex;
+            gap: 1em;
+        }
+
+        .res-row > div {
+            flex: 1;
+        }
+
+        /* --- ESTILOS DEL BOTÓN ACTUALIZADOS --- */
+        .btn-orange {
+            background-color: #353131 !important;
+            color: #000000 !important; 
+            width: 100%;
+            border: none !important;
+            box-shadow: none !important;
+            font-weight: bold;
+            font-size: 0.9rem !important;
+            letter-spacing: 2px;
+            padding: 1.2em 0 !important;
+            transition: background-color 0.3s;
+        }
+
+        .btn-orange:hover {
+            background-color: #e6e6e6 !important; 
+            color: #000000 !important;
+        }
+
+        /* --- Formulario de contacto general adaptado al tema oscuro --- */
+        #contacto input[type="text"], 
+        #contacto input[type="email"], 
+        #contacto input[type="tel"], 
+        #contacto select, 
+        #contacto textarea {
+            background-color: #1a1a1a !important;
+            border: 1px solid #333333 !important;
+            color: #ffffff !important;
+        }
+
+        #contacto input[type="text"]:focus, 
+        #contacto input[type="email"]:focus, 
+        #contacto input[type="tel"]:focus, 
+        #contacto select:focus, 
+        #contacto textarea:focus {
+            border-color: #ff6b00 !important;
+        }
+
+        #contacto label {
+            color: #cccccc !important;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+<div id="wrapper" class="fade-in">
+
+    <div id="intro">
+        <h1>Casa del Atardecer </h1>
+        <p class="tagline">Jardín de eventos y de estancias cortas</p>
+
+        <p>
+        Jardín-estancia en Morelos ideal para eventos, camping y momentos inolvidables.
+        A solo 5 minutos de Tlayacapan y 10 minutos de Six Flags Hurricane Harbor Oaxtepec.
+        </p>
+
+        <ul class="actions">
+            <li>
+                <a href="#contacto" class="button herobutton">
+                    Reserva ahora
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <header id="header">
+        <a href="index.html" class="logo">Casa del Atardecer</a>
+    </header>
+
+    <div id="main">
+
+        <article class="post featured">
+            <header class="major">
+                <h2>Desconecta, descansa, disfruta...</h2>
+                <p>
+                Casa del Atardecer es un jardín-estancia que tiene diferentes modalidades de renta incluyendo eventos y camping. 
+                Se encuentra aproximadamente a 5 minutos del pueblo mágico de Tlayacapan y a 10 minutos de Six Flags Hurricane Harbor Oaxtepec.
+                </p>
+                <br>
+                <p>
+                Somos un grupo familiar que busca realizar eventos inolvidables de acuerdo a sus necesidades, buscando un lugar de descanso en familia, o bien, con amigos, de una manera segura y cómoda, es por ello que ofrecemos de manera desglosada los servicios con los que cuenta la casa para que armes el tuyo a tu preferencia.
+                </p>
+            </header>
+
+            <ul class="actions special">
+                <li>
+                    <a href="#contacto" class="button large primary">
+                        Reserva ahora
+                    </a>
+                </li>
+            </ul>
+
+            <div class="featured-img-container">
+                <img src="images/pic01.jpg" alt="Casa del Atardecer"  />
+            </div>
+        </article>
+
+      <section class="post" data-aos="fade-up">
+    <header class="major">
+        <h2>Conócenos</h2>
+    </header>
+    <div class="row">
+        <div class="col-6 col-12-small">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4093.360938690032!2d-98.97356112453676!3d18.933561956428292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce6dcfc0f6124d%3A0x6aca0851941bff22!2sCasa%20del%20Atardecer!5e1!3m2!1ses-419!2smx!4v1774896134129!5m2!1ses-419!2smx"
+                width="100%" height="315" style="border:0; border-radius: 8px;" allowfullscreen loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="col-6 col-12-small">
+    <iframe 
+        width="100%" 
+        height="315"
+        src="https://www.youtube.com/embed/mai2dJgXK6I?si=1&modestbranding=1"
+        title="Video Casa del Atardecer"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="border:0; border-radius:8px;">
+    </iframe>
+</div>
+    </div>
+</section>
+
+        <section class="post" data-aos="fade-up">
+            <header class="major">
+                <h2>Nuestros Servicios</h2>
+            </header>
+            <div class="row">
+                <div class="col-6 col-12-small">
+                    <div class="service-card">
+                        <span class="image fit"><img src="images/picevent.jpg" alt="Eventos" style="border-radius: 8px; margin-bottom: 1em;" /></span>
+                        <h3>Eventos</h3>
+                        <p>Ideal para todo tipo de eventos, bodas, bautizos, reuniones familiares y empresariales.</p>
+                        <a href="#contacto" class="button small">Cotizar</a>
+                    </div>
+                </div>
+                <div class="col-6 col-12-small">
+                    <div class="service-card">
+                        <span class="image fit"><img src="images/piccamp.jpg" alt="Camping" style="border-radius: 8px; margin-bottom: 1em;" /></span>
+                        <h3>Camping</h3>
+                        <p>Si lo tuyo es la aventura, amplias áreas verdes seguras para acampar bajo las estrellas.</p>
+                        <a href="#contacto" class="button small">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="post">
+            <h2>Galería</h2>
+            <p>Conoce nuestras áreas. Haz clic en el botón <strong>"Ver más"</strong> de cada foto para explorar más detalles de ese espacio.</p>
+            
+            <div class="box alt" style="border: none;">
+                <div class="row gtr-50 gtr-uniform">
+                    
+                    <div class="col-4 category-wrapper">
+                        <div class="img-container">
+                            <a href="images/pic02.jpg" data-lightbox="galeria">
+                            <img src="images/pic02.jpg">
+                            </a> 
+                            <button class="btn-ver-mas" onclick="toggleCategory('subgal1', this)">Ver más</button>
+                        </div>
+                        <div id="subgal1" class="subgallery">
+                            <div class="row">
+                                <div class="col-6"><span class="image fit"><img src="images/pic11.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic36.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic13.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic14.jpg" alt=""></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 category-wrapper">
+                        <div class="img-container">
+                            <a href="images/pic09.jpg" data-lightbox="galeria">
+                            <img src="images/pic09.jpg">
+                            </a>
+                            <button class="btn-ver-mas" onclick="toggleCategory('subgal2', this)">Ver más</button>
+                        </div>
+                        <div id="subgal2" class="subgallery">
+                            <div class="row">
+                                <div class="col-6"><span class="image fit"><img src="images/pic17.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic27.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic31.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic35.jpg" alt=""></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 category-wrapper">
+                        <div class="img-container">
+                            <a href="images/pic04.jpg" data-lightbox="galeria">
+                            <img src="images/pic04.jpg">
+                            </a>
+                            <button class="btn-ver-mas" onclick="toggleCategory('subgal3', this)">Ver más</button>
+                        </div>
+                        <div id="subgal3" class="subgallery">
+                            <div class="row">
+                                <div class="col-6"><span class="image fit"><img src="images/pic37.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic41.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic42.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic23.jpg" alt=""></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 category-wrapper">
+                        <div class="img-container">
+                            <a href="images/pic05.jpg" data-lightbox="galeria">
+                            <img src="images/pic05.jpg">
+                            </a>
+                            <button class="btn-ver-mas" onclick="toggleCategory('subgal4', this)">Ver más</button>
+                        </div>
+                        <div id="subgal4" class="subgallery">
+                            <div class="row">
+                                <div class="col-6"><span class="image fit"><img src="images/pic15.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic18.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic20.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic21.jpg" alt=""></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 category-wrapper">
+                        <div class="img-container">
+                            <a href="images/pic06.jpg" data-lightbox="galeria">
+                            <img src="images/pic06.jpg">
+                            </a>
+                            <button class="btn-ver-mas" onclick="toggleCategory('subgal5', this)">Ver más</button>
+                        </div>
+                        <div id="subgal5" class="subgallery">
+                            <div class="row">
+                                <div class="col-6"><span class="image fit"><img src="images/pic25.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic16.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic29.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic32.jpg" alt=""></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 category-wrapper">
+                        <div class="img-container">
+                            <a href="images/pic08.jpg" data-lightbox="galeria">
+                            <img src="images/pic08.jpg">
+                            </a>
+                            <button class="btn-ver-mas" onclick="toggleCategory('subgal6', this)">Ver más</button>
+                        </div>
+                        <div id="subgal6" class="subgallery">
+                            <div class="row">
+                                <div class="col-6"><span class="image fit"><img src="images/pic34.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic38.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic40.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic44.jpg" alt=""></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 category-wrapper">
+                        <div class="img-container">
+                            <a href="images/pic07.jpg" data-lightbox="galeria">
+                            <img src="images/pic07.jpg">
+                            </a>
+                            <button class="btn-ver-mas" onclick="toggleCategory('subgal7', this)">Ver más</button>
+                        </div>
+                        <div id="subgal7" class="subgallery">
+                            <div class="row">
+                                <div class="col-6"><span class="image fit"><img src="images/pic45.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic46.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic47.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic22.jpg" alt=""></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 category-wrapper">
+                        <div class="img-container">
+                           <a href="images/pic03.jpg" data-lightbox="galeria">
+                            <img src="images/pic03.jpg">
+                            </a>
+                            <button class="btn-ver-mas" onclick="toggleCategory('subgal8', this)">Ver más</button>
+                        </div>
+                        <div id="subgal8" class="subgallery">
+                            <div class="row">
+                                <div class="col-6"><span class="image fit"><img src="images/pic19.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic24.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic26.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic43.jpg" alt=""></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 category-wrapper">
+                        <div class="img-container">
+                           <a href="images/pic10.jpg" data-lightbox="galeria">
+                            <img src="images/pic10.jpg">
+                            </a>
+                            <button class="btn-ver-mas" onclick="toggleCategory('subgal9', this)">Ver más</button>
+                        </div>
+                        <div id="subgal9" class="subgallery">
+                            <div class="row">
+                                <div class="col-6"><span class="image fit"><img src="images/pic28.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic30.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic33.jpg" alt=""></span></div>
+                                <div class="col-6"><span class="image fit"><img src="images/pic39.jpg" alt=""></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 3em;">Más de nuestros eventos</h3>
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-prev" onclick="moveSlide(-1)">❮</button>
+                <div class="carousel-track" id="track">
+                    <img src="images/car01.jpg" >
+                    <img src="images/car02.jpg" >
+                    <img src="images/car03.jpg" >
+                    <img src="images/car04.jpg" >
+                    <img src="images/car05.jpg" >
+                    <img src="images/car06.jpg" >
+                    <img src="images/car07.jpg" >
+                </div>
+                <button class="carousel-btn carousel-next" onclick="moveSlide(1)">❯</button>
+            </div>
+        </section>
+        
+        <section class="reservation-widget">
+            <div class="reservation-info">
+                <div class="stars">★★★★★</div>
+                <p class="desc">Casa del Atardecer es un jardín-estancia que tiene diferentes modalidades de renta incluyendo eventos y camping. ¡Realiza tu reserva ahora y disfruta de este increíble espacio!</p>
+                
+                <div class="reservation-contact">
+                    <i class="icon solid fa-phone-alt"></i>
+                    <div class="details">
+                        <span>Reservación</span>
+                        <strong>5572116983</strong>
+                    </div>
+                </div>
+                <p style="margin: 0; color: rgba(255,255,255,0.7);"><i class="icon solid fa-check" style="color: #ffffff; margin-right: 0.5em;"></i>Llámanos.</p>
+            </div>
+            
+            <div class="reservation-box">
+                <h3>Formulario de reserva</h3>
+                <form id="reservaForm" onsubmit="enviarReservaWhatsApp(event)">
+                    <input type="date" id="check_in" required title="Fecha de entrada" />
+                    <input type="date" id="check_out" required title="Fecha de salida" />
+                    
+                    <div class="res-row">
+                        <div>
+                            <select id="adultos" required>
+                                <option value="" disabled selected>Adultos</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5+">5+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="ninos">
+                                <option value="" disabled selected>Niños</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4+">4+</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="button primary btn-orange">VER DISPONIBILIDAD</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="post">
+            <script src="https://widget.trustmary.com/3saMoWtun"></script>
+        </section>
+
+        <section class="post" id="contacto">
+    <h2>Escríbenos</h2>
+    <p>¿Tienes dudas o quieres cotizar un evento en específico? Llena el siguiente formulario y nos pondremos en contacto contigo.</p>
+    
+    <form id="form-contacto">
+        <div class="row gtr-uniform">
+            <div class="col-4 col-12-xsmall">
+                <input type="text" id="nombre" placeholder="Nombre completo" required />
+            </div>
+            <div class="col-4 col-12-xsmall">
+                <input type="email" id="correo" placeholder="Correo electrónico" required />
+            </div>
+            <div class="col-4 col-12-xsmall">
+                <input type="tel" id="telefono" placeholder="Número de teléfono" required />
+            </div>
+            <div class="col-12">
+                <select id="tipo_evento">
+                    <option value="">- Tipo de servicio que te interesa -</option>
+                    <option value="Eventos / Fiesta">Eventos / Fiesta</option>
+                    <option value="Camping">Camping</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="col-4 col-12-small">
+                <input type="radio" id="p-low" name="cantidad" value="Menos de 10" checked>
+                <label for="p-low">Menos de 10 personas</label>
+            </div>
+            <div class="col-4 col-12-small">
+                <input type="radio" id="p-normal" name="cantidad" value="De 10 a 30">
+                <label for="p-normal">De 10 a 30 personas</label>
+            </div>
+            <div class="col-4 col-12-small">
+                <input type="radio" id="p-high" name="cantidad" value="Más de 30">
+                <label for="p-high">Más de 30 personas</label>
+            </div>
+            <div class="col-12">
+                <textarea id="mensaje" placeholder="Déjanos tus dudas o especificaciones de tu evento..." rows="6" required></textarea>
+            </div>
+            <div class="col-12">
+                <ul class="actions">
+                    <li><button type="button" class="primary" onclick="enviarWhatsApp()">Enviar Mensaje</button></li>
+                    <li><input type="reset" value="Limpiar" /></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</section>
+
+    </div>
+
+    <footer id="footer">
+        <section>
+            <h3>Reserva</h3>
+            <p>
+                <a href="https://wa.me/5215572116983" class="button primary" target="_blank">
+                    Reservar por WhatsApp
+                </a>
+            </p>
+            <br>
+            <h3>Mapa</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4093.360938690032!2d-98.97356112453676!3d18.933561956428292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce6dcfc0f6124d%3A0x6aca0851941bff22!2sCasa%20del%20Atardecer!5e1!3m2!1ses-419!2smx!4v1774896134129!5m2!1ses-419!2smx" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="split contact">
+            <section class="alt">
+                <h3>Ubicación</h3>
+                <p>
+                Circuito del Sol #16<br />
+                Predio Loma del Morillo<br /> 
+                Col.Ampliación Corral Grande<br />
+                 62738 Oaxtepec, Mor.
+                </p>
+            </section>
+
+            <section>
+                <h3>Teléfono</h3>
+                <p><a href="tel:5572116983">5572116983</a></p>
+            </section>
+
+            <section>
+                <h3>Email</h3>
+                <p><a href="mailto:mehrcugar@gmail.com">mehrcugar@gmail.com</a></p>
+            </section>
+
+            <section>
+                <h3>Redes Sociales</h3>
+                <ul class="icons alt">
+                    <li><a href="https://www.facebook.com/share/1ENZdoq7tf/?mibextid=wwXIfr" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/casa_del_atardecer?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                </ul>
+            </section>
+        </section>
+    </footer>
+
+    <div id="copyright">
+        <ul><li>© Casa del Atardecer</li></ul>
+    </div>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    let currentSlide = 0;
+    const track = document.getElementById('track');
+    const totalSlides = track.children.length;
+
+    function moveSlide(direction) {
+        currentSlide += direction;
+        
+        if (currentSlide >= totalSlides) {
+            currentSlide = 0;
+        } 
+        else if (currentSlide < 0) {
+            currentSlide = totalSlides - 1;
+        }
+        
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    // --- SCRIPT PARA MOSTRAR/OCULTAR LAS SUB-GALERÍAS ---
+    function toggleCategory(catId, btnElement) {
+        let subgal = document.getElementById(catId);
+        
+        // Si está oculta, la mostramos y cambiamos el texto
+        if (subgal.style.display === "none" || subgal.style.display === "") {
+            subgal.style.display = "block";
+            btnElement.innerText = "Ver menos";
+        } else {
+            // Si está visible, la ocultamos y regresamos el texto original
+            subgal.style.display = "none";
+            btnElement.innerText = "Ver más";
+        }
+    }
+
+    // --- SCRIPT PARA ENVIAR RESERVA A WHATSAPP ---
+    function enviarReservaWhatsApp(event) {
+        event.preventDefault(); 
+
+        let checkIn = document.getElementById('check_in').value;
+        let checkOut = document.getElementById('check_out').value;
+        let adultos = document.getElementById('adultos').value;
+        let ninos = document.getElementById('ninos').value || "0";
+
+        let mensaje = `¡Hola! Me gustaría verificar disponibilidad para Casa del Atardecer.%0A%0A🗓️ *Check-in:* ${checkIn}%0A🗓️ *Check-out:* ${checkOut}%0A *Adultos:* ${adultos}%0A *Niños:* ${ninos}%0A%0A¿Tienen disponibilidad para estas fechas?`;
+
+        let telefono = "5215572116983";
+        let urlWhatsApp = `https://wa.me/${telefono}?text=${mensaje}`;
+        
+        window.open(urlWhatsApp, '_blank');
+    }
+</script>
+<a href="https://wa.me/5215572116983" target="_blank" class="whatsapp-float">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="55">
+</a>
+
+<style>
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+duration: 1000,
+once: true
+});
+</script>
+<script>
+function enviarWhatsApp() {
+    // 1. Obtener los valores de los campos
+    const nombre = document.getElementById('nombre').value;
+    const correo = document.getElementById('correo').value;
+    const tel = document.getElementById('telefono').value;
+    const evento = document.getElementById('tipo_evento').value;
+    const mensajeUser = document.getElementById('mensaje').value;
+    
+    // 2. Obtener el valor del Radio Button seleccionado
+    const cantidad = document.querySelector('input[name="cantidad"]:checked').value;
+
+    // Validar que los campos obligatorios no estén vacíos
+    if(!nombre || !tel || !mensajeUser) {
+        alert("Por favor, llena los campos principales (Nombre, Teléfono y Mensaje)");
+        return;
+    }
+
+    // 3. Crear el mensaje con formato (usando %0A para saltos de línea)
+    const mensajeFinal = `¡Hola! Me gustaría cotizar un evento:%0A%0A` +
+        ` *Nombre:* ${nombre}%0A` +
+        ` *Correo:* ${correo}%0A` +
+        ` *Teléfono:* ${tel}%0A` +
+        ` *Tipo de Evento:* ${evento}%0A` +
+        ` *Cantidad:* ${cantidad}%0A` +
+        ` *Mensaje:* ${mensajeUser}`;
+
+    // 4. Tu número de teléfono
+    const telefono = "525572116983"; // Formato internacional (52 para México)
+
+    // 5. Abrir WhatsApp
+    const url = `https://wa.me/${telefono}?text=${mensajeFinal}`;
+    window.open(url, '_blank');
+}
+</script>
+</body>
+</html>
